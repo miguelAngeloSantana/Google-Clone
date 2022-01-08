@@ -1,0 +1,188 @@
+/* variavei */
+
+:root {
+    --color-a: #757575;
+    --bc-botoes: #f2f2f2; 
+    --input-border: #dadce0;
+    --input-color: rgba(0, 0, 0, 0.87);
+    --color-botoes: #5F6368;
+    --botoes-hoverborder: #dadada;
+    --botoes-hoverbx: #CCC;
+    --footer-cl: rgba(0, 0, 0, 0.54);
+    --footer-first: #e4e4e4;
+    --bc-input: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Configurando o body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+} 
+
+
+/* Configurando o cabeçalho */
+.top {
+    height: 48px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Configurando os links */
+
+.link-gmail {
+    padding-top: 12px;
+    padding-right: 20px;
+}
+
+
+.link-gmail a {
+    text-decoration: none;
+    color: var(--color-a);
+}
+
+
+.link-img {
+    padding-top: 12px;
+    padding-right: 40px;
+}
+
+.link-img a {
+    text-decoration: none;
+    color: var(--color-a);
+}
+
+/* Configurando as imagens */
+
+.menu-img {
+    padding-top: 22px;
+    padding-right: 30px;
+}
+
+
+
+.perfil-img {
+    padding-top: 22px;
+    padding-right: 20px;
+}
+
+.perfil-img img {
+    width:50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+
+
+/*Configurado o itens do meio*/
+
+.meio {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.meio img {
+    height: 90px;    
+}
+
+
+.meio input {
+    margin-top: 30px;
+    width: 700px;
+    padding: 13px 10px 13px 20px;
+    font-size: 18px;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    border-radius: 50px;
+}
+
+
+.meio input:hover {
+    box-shadow: 0 0 20px var(--bc-botoes);
+}
+
+
+
+.caixas button {
+    background-color: var(--bc-botoes);
+    border: 1px solid var(--bc-botoes);
+    padding: 10px 16px;
+    margin: 30px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: var(--color-botoes);
+    cursor: pointer;
+}
+
+.caixas button:hover {
+    border: 1px solid var(--botoes-hoverborder);
+    box-shadow: 0px 1px 0px var(--botoes-hoverbx);
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--bc-botoes);
+}
+
+
+
+.footer-settings:not(:first-child) {
+    border-top: 1px solid var(--footer-first);
+}
+
+
+
+.footer-country {
+    font-size: 16px;
+    color: var(--footer-cl);
+    padding: 10px 12px;
+}
+
+
+.footer-settings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    color: var(--color-botoes);
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-left a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--footer-cl);
+}
+
+
+.footer-right a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: var(--footer-cl);
+}
